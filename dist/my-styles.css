@@ -1,0 +1,18 @@
+.box {
+  border: 5px solid blue;
+}
+
+.container {
+  width: 100px;
+}
+.container .title {
+  color: red;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.container .text {
+  color: green;
+}
+.container:hover {
+  width: 150px;
+}
