@@ -1,9 +1,6 @@
-$my-var: red;
-.my-class {
-    $my-var: blue !default;
-    color: $my-var;
-}
-
-.my-class {
-    color: $my-var;
+.a {
+    color: mix(red, blue, 90%);
+    color: darken(red, 90%);
+    width: percentage(.9);
+    width: round(.9)
 }
