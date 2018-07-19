@@ -1,6 +1,7 @@
+$my-list: 35px 15px 80% 41rem;
+$colors: ( demo: #330, paid: red);
 .a {
-    color: mix(red, blue, 90%);
-    color: darken(red, 90%);
-    width: percentage(.9);
-    width: round(.9)
+    margin: $my-list;
+    top: nth($my-list, 1);
+    volor: map-get($colors, demo)
 }
