@@ -1,6 +1,12 @@
-$a: 35;
-$m: margin;
-.my-class-#{$a} {
-    color: red;
-    #{$m}: #{$a}px;
+$a: 5;
+@if $a>3 {
+    .my-class {
+        color: red;
+        @if false {
+            background: black;
+        }
+        @else {
+            padding: 80px;
+        }
+    }
 }
