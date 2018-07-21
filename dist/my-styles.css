@@ -1,14 +1,22 @@
-.btn-confirm, .btn-cancel {
+.my-container .btn-confirm,
+.header .btn-confirm,
+.footer .btn-confirm, .modal .button-group .btn-cancel,
+.table .button-group .btn-cancel,
+.menu .button-group .btn-cancel {
   min-width: 150px;
   padding: 10px 20px;
 }
 
-.btn-confirm {
+.my-container .btn-confirm,
+.header .btn-confirm,
+.footer .btn-confirm {
   background-color: green;
   color: white;
 }
 
-.btn-cancel {
+.modal .button-group .btn-cancel,
+.table .button-group .btn-cancel,
+.menu .button-group .btn-cancel {
   background-color: red;
   color: white;
 }

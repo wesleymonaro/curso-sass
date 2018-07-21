@@ -3,14 +3,24 @@
     padding: 10px 20px;
 }
 
-.btn-confirm {
-    background-color: green;
-    color: white;
-    @extend %btn;
+.my-container,
+.header,
+.footer {
+    .btn-confirm {
+        background-color: green;
+        color: white;
+        @extend %btn;
+    }
 }
 
-.btn-cancel {
-    background-color: red;
-    color: white;
-    @extend %btn;
+.modal,
+.table,
+.menu {
+    .button-group {
+        .btn-cancel {
+            background-color: red;
+            color: white;
+            @extend %btn;
+        }
+    }
 }
