@@ -1,9 +1,0 @@
-.box {
-  border: 1px solid black;
-}
-.box__button {
-  color: red;
-}
-.box--error {
-  background-color: red;
-}
