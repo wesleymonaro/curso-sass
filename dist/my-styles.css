@@ -1,9 +1,14 @@
-.btn, .btn-confirm {
+.btn-confirm, .btn-cancel {
   min-width: 150px;
   padding: 10px 20px;
 }
 
 .btn-confirm {
   background-color: green;
+  color: white;
+}
+
+.btn-cancel {
+  background-color: red;
   color: white;
 }
