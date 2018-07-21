@@ -1,7 +1,11 @@
-@mixin error-box {
+@mixin error-box($border-width: 10px) {
     color: red;
     background-color: white;
-    border: 5px solid red;
+    border: $border-width solid red;
+}
+
+@mixin padding-mixin($values...) {
+    padding: $values;
 }
 
 .my-box {
@@ -11,5 +15,6 @@
 }
 
 .my-box-2 {
-    @include error-box;
+    @include error-box(50px);
+    @include padding-mixin(50px 10px 20px 40px);
 }
