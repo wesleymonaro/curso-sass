@@ -1,35 +1,10 @@
-@mixin error-box($border-width: 10px) {
-    color: red;
-    background-color: white;
-    border: $border-width solid red;
+.btn {
+    min-width: 150px;
+    padding: 10px 20px;
 }
 
-@mixin padding-mixin($values...) {
-    padding: $values;
-}
-
-@mixin links {
-    text-decoration: none;
-    color: black;
-    @content;
-}
-
-.my-box {
-    font-size: 18px;
-    padding: 10px;
-    @include error-box;
-}
-
-.my-box-2 {
-    @include error-box(50px);
-    @include padding-mixin(50px 10px 20px 40px);
-    a {
-        @include links {
-            cursor: pointer;
-            &:hover {
-                color: red;
-            }
-        }
-        ;
-    }
+.btn-confirm {
+    background-color: green;
+    color: white;
+    @extend .btn;
 }
