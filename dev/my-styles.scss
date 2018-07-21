@@ -1,7 +1,15 @@
-@function double($value) {
-    @return $value * 2;
+@mixin error-box {
+    color: red;
+    background-color: white;
+    border: 5px solid red;
 }
 
-.my-class {
-    width: double(20px);
+.my-box {
+    font-size: 18px;
+    padding: 10px;
+    @include error-box;
+}
+
+.my-box-2 {
+    @include error-box;
 }
