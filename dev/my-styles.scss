@@ -8,6 +8,12 @@
     padding: $values;
 }
 
+@mixin links {
+    text-decoration: none;
+    color: black;
+    @content;
+}
+
 .my-box {
     font-size: 18px;
     padding: 10px;
@@ -17,4 +23,13 @@
 .my-box-2 {
     @include error-box(50px);
     @include padding-mixin(50px 10px 20px 40px);
+    a {
+        @include links {
+            cursor: pointer;
+            &:hover {
+                color: red;
+            }
+        }
+        ;
+    }
 }
