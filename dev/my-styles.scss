@@ -1,12 +1,22 @@
-$a: 5;
-@if $a>3 {
-    .my-class {
+$my-colors: "red",
+"green",
+"blue";
+@for $i from 1 through 3 {
+    .class-#{$i} {
         color: red;
-        @if false {
-            background: black;
-        }
-        @else {
-            padding: 80px;
-        }
     }
+}
+
+@each $color in $my-colors {
+    .btn-#{$color} {
+        background-color: $color;
+    }
+}
+
+$i: 0;
+@while $i < 5 {
+    .my-class-#{$i} {
+        padding: 50px;
+    }
+    $i: $i+1;
 }

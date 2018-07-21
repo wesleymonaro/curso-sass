@@ -1,4 +1,43 @@
-.my-class {
+.class-1 {
   color: red;
-  padding: 80px;
+}
+
+.class-2 {
+  color: red;
+}
+
+.class-3 {
+  color: red;
+}
+
+.btn-red {
+  background-color: "red";
+}
+
+.btn-green {
+  background-color: "green";
+}
+
+.btn-blue {
+  background-color: "blue";
+}
+
+.my-class-0 {
+  padding: 50px;
+}
+
+.my-class-1 {
+  padding: 50px;
+}
+
+.my-class-2 {
+  padding: 50px;
+}
+
+.my-class-3 {
+  padding: 50px;
+}
+
+.my-class-4 {
+  padding: 50px;
 }
