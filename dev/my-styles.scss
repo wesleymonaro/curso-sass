@@ -1,7 +1,6 @@
-$my-list: 35px 15px 80% 41rem;
-$colors: ( demo: #330, paid: red);
-.a {
-    margin: $my-list;
-    top: nth($my-list, 1);
-    volor: map-get($colors, demo)
+$a: 35;
+$m: margin;
+.my-class-#{$a} {
+    color: red;
+    #{$m}: #{$a}px;
 }
